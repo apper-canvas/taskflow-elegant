@@ -10,7 +10,7 @@ const Home = () => {
     return 'abcd';
   }
 
-
+console.log('temp :', tempFunction2());
 
   useEffect(() => {
     const isDark = localStorage.getItem('darkMode') === 'true'
@@ -31,6 +31,9 @@ const Home = () => {
     }
   }
 
+  const tempFunction2 = () => {
+    return 'abcd';
+  }
 
   return (
     <div className="min-h-screen">
