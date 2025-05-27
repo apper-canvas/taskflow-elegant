@@ -7,6 +7,7 @@ const Home = () => {
   const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
+    console.log('logging :', tempFunction());
     const isDark = localStorage.getItem('darkMode') === 'true'
     setDarkMode(isDark)
     if (isDark) {
@@ -23,6 +24,10 @@ const Home = () => {
     } else {
       document.documentElement.classList.remove('dark')
     }
+  }
+
+  const tempFunction = () => {
+    return 'abcd';
   }
 
   return (
