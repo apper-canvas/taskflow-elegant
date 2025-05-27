@@ -29,6 +29,19 @@ export default {
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a'
+        },
+        border: {
+          DEFAULT: 'hsl(214.3 31.8% 91.4%)',
+          dark: 'hsl(217.2 32.6% 17.5%)'
+        },
+        background: {
+          DEFAULT: 'hsl(0 0% 100%)',
+          dark: 'hsl(222.2 84% 4.9%)'
+        },
+        foreground: {
+          DEFAULT: 'hsl(222.2 84% 4.9%)',
+          dark: 'hsl(210 40% 98%)'
+
         }
       },
       fontFamily: {
