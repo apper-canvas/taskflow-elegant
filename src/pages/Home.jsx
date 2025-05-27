@@ -6,8 +6,9 @@ import ApperIcon from '../components/ApperIcon'
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false)
 
+  console.log('logging :', tempFunction());
+
   useEffect(() => {
-    console.log('logging :', tempFunction());
     const isDark = localStorage.getItem('darkMode') === 'true'
     setDarkMode(isDark)
     if (isDark) {
