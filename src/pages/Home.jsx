@@ -6,7 +6,11 @@ import ApperIcon from '../components/ApperIcon'
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false)
 
-  console.log('logging :', tempFunction());
+  const tempFunction = () => {
+    return 'abcd';
+  }
+
+
 
   useEffect(() => {
     const isDark = localStorage.getItem('darkMode') === 'true'
@@ -27,9 +31,6 @@ const Home = () => {
     }
   }
 
-  const tempFunction = () => {
-    return 'abcd';
-  }
 
   return (
     <div className="min-h-screen">
