@@ -11,7 +11,7 @@ const Home = () => {
 
 
   useEffect(() => {
-    console.log('abcd :', abcd);
+    //console.log('abcd :', abcd);
     const isDark = localStorage.getItem('darkMode') === 'true'
     setDarkMode(isDark)
     if (isDark) {
