@@ -60,6 +60,7 @@ const Home = () => {
               Projects
             </Link>
           </nav>
+          <man></man>
           
           <div className="flex items-center space-x-2 sm:space-x-4">
 
