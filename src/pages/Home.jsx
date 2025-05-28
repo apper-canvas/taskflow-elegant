@@ -30,7 +30,7 @@ const Home = () => {
     }
   }
 
-  console.log('abcd :', abcd);
+  //console.log('abcd :', abcd);
 
 
   return (
