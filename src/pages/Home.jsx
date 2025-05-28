@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import MainFeature from '../components/MainFeature'
 import ApperIcon from '../components/ApperIcon'
-import abcd from '../abcd'
+//import abcd from '../abcd'
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false)
 
 
   useEffect(() => {
-    //console.log('abcd :', abcd);
+    console.log('abcd :', abcd);
     const isDark = localStorage.getItem('darkMode') === 'true'
     setDarkMode(isDark)
     if (isDark) {
