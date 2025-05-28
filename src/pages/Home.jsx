@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 import { motion } from 'framer-motion'
 import MainFeature from '../components/MainFeature'
 import ApperIcon from '../components/ApperIcon'
@@ -37,16 +39,32 @@ const Home = () => {
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-3">
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center shadow-lg">
                 <ApperIcon name="CheckSquare" className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
               </div>
               <h1 className="text-lg sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
                 TaskFlow
               </h1>
-            </div>
+            </Link>
+          </div>
+          
+          <nav className="hidden md:flex items-center space-x-6">
+            <span className="text-primary font-medium">Home</span>
+            <Link 
+              to="/projects" 
+              className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary-light transition-colors"
+            >
+              Projects
+            </Link>
+          </nav>
+          
+          <div className="flex items-center space-x-2 sm:space-x-4">
+
+            
             
             <div className="flex items-center space-x-2 sm:space-x-4">
+
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
